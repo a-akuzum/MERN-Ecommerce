@@ -3,7 +3,11 @@ import Menu from './Menu'
 
 
 //default title, desc
-const Layout = ({title='Title', description='Description',className, children}) => (
+const Layout = ({
+    title='Title',
+    description='Description',
+    className,
+    children}) => (
     <div>
 
         <Menu />
