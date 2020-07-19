@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+//default title, desc
 const Layout = ({title='Title', description='Description',className, children}) => (
     <div>
         <div className="jumbotron">
