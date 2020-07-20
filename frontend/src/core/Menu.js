@@ -9,7 +9,7 @@ const isActive = (history, path) => {
     }
 }
 
-const Menu = () => (
+const Menu = ({ history }) => ( //props decon = history 
     <div>
         <ul className="nav nav-tabs bg-primary">
             <li className="nav-item">
