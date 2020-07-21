@@ -1,6 +1,14 @@
 import React from 'react'
 import {Link, withRouter} from 'react-router-dom'
 
+const isActive = (history, path) => {
+    if (history.location.path === path){
+        return {color: '#ff9900'}
+    }else{
+        return {color: "#ffffff"}
+    }
+}
+
 const Menu = () => (
     <div>
         <ul className="nav nav-tabs bg-primary">
@@ -19,4 +27,4 @@ const Menu = () => (
     </div>
 )
 
-exports default withRouter(Menu)
+export default withRouter(Menu)
