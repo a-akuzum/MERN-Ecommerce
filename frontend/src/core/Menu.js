@@ -18,3 +18,5 @@ const Menu = () => (
         </ul>
     </div>
 )
+
+exports default withRouter(Menu)
