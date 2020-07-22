@@ -3,11 +3,15 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom' // to access props
 import Signup from './user/Signup'
 import Signin from './user/Signin'
 
+//instead of div, BrowserRouter used
 const Routes = () => {
-    return (<div>
-      <Switch>
-        <Route path="/signin" exact component={Signin} />
-        <Route path="/signup" exact component={Signup} />
-      </Switch>      
-    </div>)
+    return (
+        <BrowserRouter> 
+            <Switch>
+                <Route path="/signin" exact component={Signin} />
+                <Route path="/signup" exact component={Signup} />
+            </Switch>      
+        </BrowserRouter>)
 }
+
+export default Routes;
