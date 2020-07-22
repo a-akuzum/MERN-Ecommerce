@@ -4,9 +4,9 @@ import Signup from './user/Signup'
 import Signin from './user/Signin'
 
 const Routes = () => {
-    return (
-        <div>
-            
-        </div> 
-    )
+    return (<div>
+      <Switch>
+
+      </Switch>      
+    </div>)
 }
