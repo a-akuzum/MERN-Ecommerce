@@ -9,8 +9,8 @@ router.get('/secret/:userId', requireSignin, isAuth, isAdmin, (req, res) => {
     })
 })
 
-//user able to see the profile and update the profile
-
+//user able to see the profile and update the profile - no need to be admin
+router.get('/user/:userId',requireSignin, isAuth)
 
 router.param('userId', userById)
 
