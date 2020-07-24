@@ -13,3 +13,7 @@ exports.userById = (req, res, next, id) => {
         next();
     });
 }
+
+exports.read = (req, res) => {
+    
+}
