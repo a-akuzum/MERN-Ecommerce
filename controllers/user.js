@@ -15,9 +15,11 @@ exports.userById = (req, res, next, id) => {
 }
 
 exports.read = (req, res) => {
-
+    req.profile.hashed_password = undefined // make sure dont send password infos
+    req.profile.salt = undefined
+    return res.json(req.profile)
 }
 
 exports.update = (req, res) => {
-
+    
 }
