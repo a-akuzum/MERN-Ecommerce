@@ -221,7 +221,7 @@ exports.listBySearch = (req, res) => {
     }
  
     Product.find(findArgs)
-        .select("-photo")
+        .select("-photo") // not selecting photo
         .populate("category")
         .sort([[sortBy, order]])
         .skip(skip)
