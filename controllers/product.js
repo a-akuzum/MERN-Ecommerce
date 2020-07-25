@@ -237,4 +237,8 @@ exports.listBySearch = (req, res) => {
                 data
             });
         });
-};
+}
+
+exports.photo = (req, res, next) => {
+    
+}
