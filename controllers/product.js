@@ -233,7 +233,7 @@ exports.listBySearch = (req, res) => {
                 });
             }
             res.json({
-                size: data.length,
+                size: data.length, // how many products there are
                 data
             });
         });
