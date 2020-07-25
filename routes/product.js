@@ -11,7 +11,8 @@ const {
     list,
     listRelated,
     listCategories,
-    listBySearch } = require("../controllers/product")
+    listBySearch,
+    photo } = require("../controllers/product")
 
 
 
