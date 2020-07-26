@@ -10,7 +10,8 @@ const {
     update, 
     list,
     listRelated,
-    listCategories } = require("../controllers/product")
+    listCategories,
+    listBySearch } = require("../controllers/product")
 
 
 
@@ -38,7 +39,7 @@ router.put(
 router.get('/products', list)
 router.get('/products/related/:productId', listRelated) //to fetch related product
 router.get('/products/categories', listCategories)
-
+router.post('/products/by/search', listBySearch)
 
 
 /////////////////////

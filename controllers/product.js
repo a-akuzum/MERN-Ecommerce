@@ -195,8 +195,7 @@ exports.listCategories = (req, res) => {
  *make api request and show the products to users based on what he wants
  */
  
-// route - make sure its post
-router.post("/products/by/search", listBySearch);
+
  
 exports.listBySearch = (req, res) => {
     let order = req.body.order ? req.body.order : "desc";
