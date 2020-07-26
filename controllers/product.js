@@ -195,8 +195,6 @@ exports.listCategories = (req, res) => {
  *make api request and show the products to users based on what he wants
  */
  
-
- 
 exports.listBySearch = (req, res) => {
     let order = req.body.order ? req.body.order : "desc";
     let sortBy = req.body.sortBy ? req.body.sortBy : "_id";
