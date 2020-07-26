@@ -39,6 +39,9 @@ router.get('/products', list)
 router.get('/products/related/:productId', listRelated) //to fetch related product
 router.get('/products/categories', listCategories)
 
+
+
+/////////////////////
 router.param('userId', userById)
 router.param('productId', productById)
 
