@@ -180,8 +180,8 @@ exports.listCategories = (req, res) => {
     Product.distinct("category", {}, (err, categories)) // all the products distinct to Product
     if(err){
         return res.status(400).json({
-            error: "Products not found"
+            error: "Categories not found"
         })
     }
-    res.json(products)
+    res.json(categories)
 }
