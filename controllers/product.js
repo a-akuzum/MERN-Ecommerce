@@ -177,5 +177,5 @@ exports.listRelated = (req, res) => {
 }
 
 exports.listCategories = (req, res) => {
-    Product.distinct("category")
+    Product.distinct("category", {}, (err, categories)) // all the products distinct to Product
 }
