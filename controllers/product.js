@@ -147,5 +147,9 @@ exports.list = (req, res) => {
         .select("-photo")
         .populate("category")
         .sort([[sortBy, order]])
+        .limit(limit)
+        .exec((err, data) => {
+            
+        })
 
 }
