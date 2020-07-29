@@ -154,7 +154,7 @@ exports.list = (req, res) => {
                     error: "Product not found"    
                 })
             }
-            res.send(products)
+            res.json(products)
         })
 }
 
