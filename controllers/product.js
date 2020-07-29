@@ -149,7 +149,12 @@ exports.list = (req, res) => {
         .sort([[sortBy, order]])
         .limit(limit)
         .exec((err, data) => {
-            
+            if(err){
+                return res.status(400).json({
+                    error: "Product not found"    
+                })
+            }
+            res.send(products)
         })
 
 }
