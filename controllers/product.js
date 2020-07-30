@@ -156,5 +156,8 @@ exports.list = (req, res) => {
             }
             res.send(products)
         })
+}
+
+exports.listRelated = (req, res) => {
 
 }
