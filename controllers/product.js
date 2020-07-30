@@ -158,6 +158,8 @@ exports.list = (req, res) => {
         })
 }
 
+//it will find the products based on the req product category
+//other products that has the same category, will be returned
 exports.listRelated = (req, res) => {
-
+    
 }
