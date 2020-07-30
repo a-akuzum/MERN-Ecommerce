@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const { userById } = require("../controllers/user")
+const { requireSignin, isAdmin, isAuth } = require('../controllers/auth')
 const { 
     create, 
     productById, 
@@ -8,7 +9,6 @@ const {
     remove, 
     update, 
     list } = require("../controllers/product")
-const { requireSignin, isAdmin, isAuth } = require('../controllers/auth')
 
 
 
