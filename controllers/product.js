@@ -135,3 +135,4 @@ exports.update = (req, res) => {
 // QUERIES
 // sell / arrivals
 // by sell = /products?sortBy=sold&order=desc&limit=4
+// by arrival = /products?sortBy=createdAt&order=desc&limit=4
