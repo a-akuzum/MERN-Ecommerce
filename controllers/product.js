@@ -130,3 +130,8 @@ exports.update = (req, res) => {
         })
     })
 }
+
+
+// QUERIES
+// sell / arrivals
+// by sell = /products?sortBy=sold&order=desc&limit=4
