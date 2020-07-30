@@ -144,11 +144,11 @@ exports.list = (req, res) => {
     let limit = req.query.limit ? req.query.limit : 6
 
     Product.find()
-        .select("-photo")
-        .populate("category")
+        .select("-photo") //deselect
+        .populate('category')
         .sort([[sortBy, order]])
         .limit(limit)
-        .exec((err, data) => {
+        .exec((err, products) => {
             if(err){
                 return res.status(400).json({
                     error: "Product not found"    
