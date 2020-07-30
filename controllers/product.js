@@ -161,5 +161,9 @@ exports.list = (req, res) => {
 //it will find the products based on the req product category
 //other products that has the same category, will be returned
 exports.listRelated = (req, res) => {
-    
+    let limit = req.query.limit ? parseInt(req.query.limit) : 6
+    //$ne: not included on mongodb, so this will only return related product not actual product
+    Product.find({_id: {$ne: req.product}, category: req.product.category})
+
+
 }
