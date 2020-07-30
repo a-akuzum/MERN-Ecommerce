@@ -140,4 +140,6 @@ exports.update = (req, res) => {
 
 exports.list = (req, res) => {
     let order = req.query.order ? req.query.order : 'asc'
+    let order = req.query.order ? req.query.order : 'asc'
+    let order = req.query.order ? req.query.order : 'asc'
 }
