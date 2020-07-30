@@ -8,7 +8,8 @@ const {
     read, 
     remove, 
     update, 
-    list } = require("../controllers/product")
+    list,
+    listRelated } = require("../controllers/product")
 
 
 
