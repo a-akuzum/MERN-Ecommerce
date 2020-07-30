@@ -34,7 +34,7 @@ router.put(
 
 
 router.get('/products', list)
-
+router.get('/products/related/:productId', listRelated) //to fetch related product
 
 router.param('userId', userById)
 router.param('productId', productById)
