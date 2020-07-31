@@ -49,8 +49,7 @@ exports.update = (req, res) => {
 
 exports.remove = (req, res) => {
     const category = req.category
-    category.name = req.body.name
-    category.save((err, data) => {
+    category.remove((err, data) => {
         if(err){
             return res.status(400).json({
                 error: errorHandler(err)
