@@ -38,7 +38,9 @@ exports.update = (req, res) => {
     const category = req.category
     category.name = req.body.name
     category.save((err, data) => {
+        if(err){
 
+        }
     })
 }
 
