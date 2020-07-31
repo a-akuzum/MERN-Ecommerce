@@ -55,10 +55,14 @@ exports.remove = (req, res) => {
                 error: errorHandler(err)
             })
         }
-        res.json(data)
+        res.json({
+            message: "Category has been deleted"
+        })
     })
 }
 
 exports.list = (req, res) => {
-
+    Category.find().exec((err, data) => {
+        
+    })
 }
