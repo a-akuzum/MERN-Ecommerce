@@ -39,7 +39,9 @@ exports.update = (req, res) => {
     category.name = req.body.name
     category.save((err, data) => {
         if(err){
+            return res.status(400).json({
 
+            })
         }
     })
 }
