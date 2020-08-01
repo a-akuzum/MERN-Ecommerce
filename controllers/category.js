@@ -38,7 +38,7 @@ exports.update = (req, res) => {
 
 }
 
-exports.update = (req, res) => {
+exports.remove = (req, res) => {
 
 }
 
