@@ -42,6 +42,6 @@ exports.remove = (req, res) => {
 
 }
 
-exports.update = (req, res) => {
+exports.list = (req, res) => {
 
 }
