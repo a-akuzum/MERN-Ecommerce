@@ -33,3 +33,15 @@ exports.create = (req, res) => {
 exports.read = (req, res) => {
     return res.json(req.category)
 }
+
+exports.update = (req, res) => {
+
+}
+
+exports.update = (req, res) => {
+
+}
+
+exports.update = (req, res) => {
+
+}
