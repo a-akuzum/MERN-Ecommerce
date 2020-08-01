@@ -35,7 +35,8 @@ exports.read = (req, res) => {
 }
 
 exports.update = (req, res) => {
-
+    const category = req.category
+    category.name = req.body.name
 }
 
 exports.remove = (req, res) => {
