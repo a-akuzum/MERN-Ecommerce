@@ -2,7 +2,7 @@ const express = require('express')
 const router = express.Router()
 const { userById } = require("../controllers/user")
 
-const { create, categoryById, read } = require("../controllers/category")
+const { create, categoryById, read, update, remove, list } = require("../controllers/category")
 const { requireSignin, isAdmin, isAuth } = require('../controllers/auth')
 
 router.get('/category/:categoryId', read)
