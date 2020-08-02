@@ -13,7 +13,7 @@ router.post(
     isAdmin, 
     create) // create method on category.js on controller
 router.put(
-    "/category/create/:userId",
+    "/category/:categoryId/:userId",
     requireSignin,
     isAuth,
     isAdmin, 
