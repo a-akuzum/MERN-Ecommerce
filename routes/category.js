@@ -13,7 +13,7 @@ router.post(
     isAdmin, 
     create) // create method on category.js on controller
 
-router.param('categoryId', categoryById)
+router.param('categoryId', categoryById) //categoryById middleware on controller
 router.param('userId', userById)
 
 
