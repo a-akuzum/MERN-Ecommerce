@@ -6,7 +6,8 @@ exports.categoryById = (res, req, next, id) => {
     Category.findById(id).exec((err, category) => {
         if (err || !category){
             return res.status(400).json({
-                error: errorHandler(err)
+                // error: errorHandler(err)
+                error: 'Category does not exist'
             })
         }
 
@@ -21,8 +22,7 @@ exports.create = (req, res) => {
     category.save((err, data) => {
         if (err){
             return req.status(400).json({
-                // error: errorHandler(err)
-                error: 'Category does not exist'
+                error: errorHandler(err)
             })
         }
         
