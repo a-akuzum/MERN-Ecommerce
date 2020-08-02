@@ -24,6 +24,9 @@ router.delete(
     isAuth,
     isAdmin, 
     remove) //remove method on category.js on controller
+router.get('/categories', list) // to list all categories
+
+
 
 router.param('categoryId', categoryById) //categoryById middleware on controller
 router.param('userId', userById)
