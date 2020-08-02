@@ -2,7 +2,7 @@ const Category = require('../models/category')
 const {errorHandler} = require('../helpers/db-ErrorHandler')
 
 // this method to grab single category on routes
-exports.categoryById = (res, req, next, id) => {
+exports.categoryById = (req, res, next, id) => {
     Category.findById(id).exec((err, category) => {
         if (err || !category){
             return res.status(400).json({
