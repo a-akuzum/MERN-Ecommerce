@@ -17,7 +17,7 @@ router.put(
     requireSignin,
     isAuth,
     isAdmin, 
-    create) 
+    update) 
 
 router.param('categoryId', categoryById) //categoryById middleware on controller
 router.param('userId', userById)
