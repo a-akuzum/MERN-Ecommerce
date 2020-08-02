@@ -12,6 +12,12 @@ router.post(
     isAuth,
     isAdmin, 
     create) // create method on category.js on controller
+router.post(
+    "/category/create/:userId",
+    requireSignin,
+    isAuth,
+    isAdmin, 
+    create) 
 
 router.param('categoryId', categoryById) //categoryById middleware on controller
 router.param('userId', userById)
