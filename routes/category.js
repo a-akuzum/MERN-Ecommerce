@@ -18,12 +18,12 @@ router.put(
     isAuth,
     isAdmin, 
     update) //update method on category.js on controller
-router.put(
+router.delete(
     "/category/:categoryId/:userId",
     requireSignin,
     isAuth,
     isAdmin, 
-    update) //update method on category.js on controller
+    remove) //remove method on category.js on controller
 
 router.param('categoryId', categoryById) //categoryById middleware on controller
 router.param('userId', userById)
