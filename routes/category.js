@@ -13,6 +13,7 @@ router.post(
     isAdmin, 
     create)
 
+router.param('categoryId', categoryById)
 router.param('userId', userById)
 
 
