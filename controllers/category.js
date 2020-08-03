@@ -21,7 +21,8 @@ exports.create = (req, res) => {
     category.save((err, data) => {
         if (err){
             return req.status(400).json({
-                error: errorHandler(err)
+                // error: errorHandler(err)
+                error: 'Category does not exist'
             })
         }
         
