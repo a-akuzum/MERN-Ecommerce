@@ -28,3 +28,7 @@ exports.create = (req, res) => {
         res.json({ data })
     })
 }
+
+exports.read = (req, res) => {
+    return res.json(req.category)
+}
