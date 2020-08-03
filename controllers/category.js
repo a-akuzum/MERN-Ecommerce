@@ -15,6 +15,7 @@ exports.categoryById = (res, req, next, id) => {
     })
 }
 
+//this method to create category or product on routes
 exports.create = (req, res) => {
     const category = new Category(req.body)
     category.save((err, data) => {
