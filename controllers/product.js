@@ -32,8 +32,7 @@ exports.create = (req, res) => {
                 error: 'Image could not be uploaded'
             })
         }
-        let product = new Product(fields)
-
+        
         // check for all fields
         const {name, description, price, category, quantity, shipping} = fields
         if(!name || !description || !price || !category || !quantity || !shipping){
@@ -41,6 +40,8 @@ exports.create = (req, res) => {
                 error: 'All fields are required'
             })
         }
+        
+        let product = new Product(fields)
         
         //photo validation
         // 1kb = 1000
@@ -101,7 +102,8 @@ exports.update = (req, res) => {
             })
         }
         
-        let product = new Product(fields)
+        let product = req.product
+        product = _.extend(product, fields)
         
         //photo validation
         // 1kb = 1000
