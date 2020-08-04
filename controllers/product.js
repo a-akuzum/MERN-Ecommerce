@@ -83,7 +83,7 @@ exports.remove = (req, res) => {
     })
 }
 
-exports.create = (req, res) => {
+exports.update = (req, res) => {
     let form = new formidable.IncomingForm()
     form.keepExtensions = true
     form.parse(req, (err, fields, files) => {
@@ -92,8 +92,7 @@ exports.create = (req, res) => {
                 error: 'Image could not be uploaded'
             })
         }
-        let product = new Product(fields)
-
+        
         // check for all fields
         const {name, description, price, category, quantity, shipping} = fields
         if(!name || !description || !price || !category || !quantity || !shipping){
@@ -101,6 +100,8 @@ exports.create = (req, res) => {
                 error: 'All fields are required'
             })
         }
+        
+        let product = new Product(fields)
         
         //photo validation
         // 1kb = 1000
