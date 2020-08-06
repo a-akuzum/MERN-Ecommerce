@@ -78,7 +78,7 @@ exports.remove = (req, res) => {
         }
         res.json({
             deletedProduct,
-            
+            message: "Produch has been deleted successfully"
         })
 
     })
