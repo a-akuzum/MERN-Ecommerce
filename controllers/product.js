@@ -76,5 +76,10 @@ exports.remove = (req, res) => {
                 error: errorHandler(err)
             })
         }
+        res.json({
+            deletedProduct,
+            
+        })
+
     })
 }
