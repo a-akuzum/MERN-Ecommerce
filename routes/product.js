@@ -14,6 +14,7 @@ router.post(
     isAuth,
     isAdmin, 
     create)
+router.delete('/product/:productId/:userId')
 
 router.param('userId', userById)
 router.param('productId', productById)
