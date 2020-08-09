@@ -4,7 +4,7 @@ const fs = require('fs')
 const Product = require('../models/product')
 const {errorHandler} = require('../helpers/db-ErrorHandler')
 
-
+// this method to seach product by id
 exports.productById = (req, res, next, id) => {
     Product.findById(id).exec((err, product) => {
     if(err || !product){
@@ -17,8 +17,9 @@ exports.productById = (req, res, next, id) => {
     })
 }
 
+//this method to read product but not photo cuz photo size 
 exports.read = (req, res) => {
-    req.product.photo = 
+    req.product.photo = undefined
 }
 
 exports.create = (req, res) => {
