@@ -17,6 +17,10 @@ exports.productById = (req, res, next, id) => {
     })
 }
 
+exports.read = (req, res) => {
+    req.product.photo = 
+}
+
 exports.create = (req, res) => {
     let form = new formidable.IncomingForm()
     form.keepExtensions = true
