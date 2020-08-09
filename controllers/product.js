@@ -20,6 +20,7 @@ exports.productById = (req, res, next, id) => {
 //this method to read product but not photo cuz photo size 
 exports.read = (req, res) => {
     req.product.photo = undefined
+    return res.json(req.product)
 }
 
 exports.create = (req, res) => {
