@@ -5,8 +5,10 @@ const Product = require('../models/product')
 const {errorHandler} = require('../helpers/db-ErrorHandler')
 
 
-exports.productById = (req, res) => {
-    
+exports.productById = (req, res, next, id) => {
+    Product.findById(id).exec((err, product) => {
+        
+        })
 }
 
 exports.create = (req, res) => {
