@@ -17,7 +17,12 @@ exports.create = (req, res) => {
         let product = new Product(fields)
 
         // check for all fields
-
+        const {name, description, price, category, quantity, shipping} = fields
+        if(!name || !description || !price || !category || !quantity || !shipping){
+            return res.status(400).json({
+                error: 'All fields are required'
+            })
+        }
         
         //photo validation
         // 1kb = 1000
