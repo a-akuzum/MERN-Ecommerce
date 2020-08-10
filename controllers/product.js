@@ -16,7 +16,9 @@ exports.create = (req, res) => {
         }
         let product = new Product(fields)
 
+        // check for all fields
 
+        
         //photo validation
         // 1kb = 1000
         // 1mb = 1000000
