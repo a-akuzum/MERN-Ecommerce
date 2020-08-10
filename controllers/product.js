@@ -7,8 +7,10 @@ const {errorHandler} = require('../helpers/db-ErrorHandler')
 
 exports.productById = (req, res, next, id) => {
     Product.findById(id).exec((err, product) => {
+    if(err || !product){
         
-        })
+    }
+    })
 }
 
 exports.create = (req, res) => {
