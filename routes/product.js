@@ -14,6 +14,7 @@ router.post(
     create)
 
 router.param('userId', userById)
+router.param('productId', productById)
 
 
 module.exports = router;
