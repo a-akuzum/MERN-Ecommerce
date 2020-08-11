@@ -21,7 +21,9 @@ exports.create = (req, res) => {
         }
 
         product.save((err, result) => {
+            if(err){
 
+            }
         })
     })
 }
