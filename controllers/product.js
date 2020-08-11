@@ -24,7 +24,7 @@ exports.create = (req, res) => {
             // console.log("FILES PHOTO: ", files.photo)
             if(files.photo.size > 1000000){
                 return res.status(400).json({
-                    error: 'Image could not be uploaded'
+                    error: 'Image size should be less than 1Mb'
                 })
             }
             
