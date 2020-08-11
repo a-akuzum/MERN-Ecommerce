@@ -23,7 +23,9 @@ exports.create = (req, res) => {
         if(files.photo){
             // console.log("FILES PHOTO: ", files.photo)
             if(files.photo.size > 1000000){
-
+                return res.status(400).json({
+                    error: 'Image could not be uploaded'
+                })
             }
             
             product.photo.data = fs.readFileSync(files.photo.path) //fs = filesystem
