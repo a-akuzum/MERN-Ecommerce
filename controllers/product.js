@@ -19,5 +19,9 @@ exports.create = (req, res) => {
             product.photo.data = fs.readFileSync(files.photo.path) //fs = filesystem
             product.photo.contentType = files.photo.type
         }
+
+        product.save((err, result) => {
+
+        })
     })
 }
