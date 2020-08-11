@@ -22,7 +22,9 @@ exports.create = (req, res) => {
         // 1mb = 1000000
         if(files.photo){
             // console.log("FILES PHOTO: ", files.photo)
-            
+            if(files.photo.size > 1000000){
+
+            }
             
             product.photo.data = fs.readFileSync(files.photo.path) //fs = filesystem
             product.photo.contentType = files.photo.type
