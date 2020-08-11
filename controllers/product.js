@@ -22,7 +22,7 @@ exports.create = (req, res) => {
 
         product.save((err, result) => {
             if(err){
-
+                return res.status(400)
             }
         })
     })
