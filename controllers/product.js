@@ -16,10 +16,14 @@ exports.create = (req, res) => {
         }
         let product = new Product(fields)
 
-        
 
+        //photo validation
+        // 1kb = 1000
+        // 1mb = 1000000
         if(files.photo){
-            console.log("FILES PHOTO: ", files.photo)
+            // console.log("FILES PHOTO: ", files.photo)
+            
+            
             product.photo.data = fs.readFileSync(files.photo.path) //fs = filesystem
             product.photo.contentType = files.photo.type
         }
