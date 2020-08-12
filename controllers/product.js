@@ -14,5 +14,9 @@ exports.create = (req, res) => {
             })
         }
         let product = new Product(fields)
+
+        if(files.photo){
+            product.photo.data
+        }
     })
 }
