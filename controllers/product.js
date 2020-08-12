@@ -13,5 +13,6 @@ exports.create = (req, res) => {
                 error: 'Image could not be uploaded'
             })
         }
+        let product = new Product(fields)
     })
 }
