@@ -16,7 +16,7 @@ exports.create = (req, res) => {
         let product = new Product(fields)
 
         if(files.photo){
-            product.photo.data = fs.readFileSync(files.photo.path)
+            product.photo.data = fs.readFileSync(files.photo.path) //fs = filesystem
             product.photo.contentType = files.photo.type
         }
     })
