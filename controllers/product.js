@@ -9,7 +9,9 @@ exports.create = (req, res) => {
     form.keepExtensions = true
     form.parse(req, (err, fields, files) => {
         if(err){
-            return res.status(400)
+            return res.status(400).json({
+                error: 
+            })
         }
     })
 }
