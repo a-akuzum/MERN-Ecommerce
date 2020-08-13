@@ -7,7 +7,7 @@ const Product = require('../models/product')
 exports.create = (req, res) => {
     let form = new formidable.IncomingForm()
     form.keepExtensions = true
-    form.parse(req, () => {
-        
+    form.parse(req, (err) => {
+
     })
 }
