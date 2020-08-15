@@ -32,8 +32,7 @@ const productSchema = new mongoose.Schema({
         contentType: String
     },
     shipping: {
-        data: Buffer,
-        contentType: String
+        required: false,
     }
 },
  { timestamps: true}
