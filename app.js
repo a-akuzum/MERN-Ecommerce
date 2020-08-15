@@ -26,6 +26,7 @@ app.use(expressValidator())
 app.use('/api',authRoutes)
 app.use('/api',userRoutes)
 app.use('/api',categoryRoutes)
+app.use('/api',productRoutes)
 
 //db connection
 mongoose.connect(
