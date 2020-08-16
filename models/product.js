@@ -22,7 +22,7 @@ const productSchema = new mongoose.Schema({
     category: {
         type: ObjectId,
         ref: "Category",
-        maxlength: 32
+        required: true
     }
 },
  { timestamps: true}
