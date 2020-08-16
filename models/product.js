@@ -25,9 +25,7 @@ const productSchema = new mongoose.Schema({
         required: true
     },
     quantity: {
-        type: Number,
-        ref: "Category",
-        required: true
+        type: Number
     }
 },
  { timestamps: true}
