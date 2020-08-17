@@ -18,6 +18,12 @@ const productSchema = new mongoose.Schema({
         trim: true,
         required: true,
         maxlength: 32
+    },
+    price: {
+        type: Number,
+        trim: true,
+        required: true,
+        maxlength: 32
     }
 },
  { timestamps: true}
