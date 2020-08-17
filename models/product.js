@@ -20,7 +20,7 @@ const productSchema = new mongoose.Schema({
         maxlength: 32
     },
     category: {
-        type: Number,
+        type: ObjectId,
         trim: true,
         required: true,
         maxlength: 32
