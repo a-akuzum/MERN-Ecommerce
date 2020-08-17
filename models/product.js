@@ -10,9 +10,8 @@ const productSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        trim: true,
         required: true,
-        maxlength: 32
+        maxlength: 2000
     }
 },
  { timestamps: true}
