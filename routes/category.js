@@ -5,7 +5,7 @@ const { create } = require("../controllers/category")
 const { requireSignin, isAdmin, isAuth } = require('../controllers/auth')
 
 
-router.post("/category/create",requireSignin,isAuth, create)
+router.post("/category/create",requireSignin,isAuth,isAdmin, create)
 
 
 
