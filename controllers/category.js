@@ -1,4 +1,6 @@
 const Category = require('../models/category')
+const {errorHandler} = require('../helpers/db-ErrorHandler')
+
 
 
 exports.create = (req, res) => {
@@ -6,7 +8,7 @@ exports.create = (req, res) => {
     category.save((err, data) => {
         if (err){
             return req.status(400).json({
-                
+
             })
         }
     })
