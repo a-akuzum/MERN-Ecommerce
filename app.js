@@ -9,6 +9,7 @@ dotenv.config()
 //import routes
 const authRoutes = require('./routes/auth')
 const userRoutes = require('./routes/user')
+const userRoutes = require('./routes/user')
 
 
 //app
