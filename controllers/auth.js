@@ -67,3 +67,7 @@ exports.isAuth = (req, res, next) => {
         }
         next();
 }
+
+exports.isAdmin = (req, res, next) => {
+    
+}
